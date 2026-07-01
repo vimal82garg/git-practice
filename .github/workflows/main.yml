@@ -1,5 +1,4 @@
-
-name: First Workflow
+name: Multi Step Workflow
 
 on: push
 
@@ -8,5 +7,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Print message
-        run: echo "Hello Vimal, GitHub Actions is working!"
+      - name: Step 1 - Print message
+        run: echo "Step 1 running"
+
+      - name: Step 2 - Show date
+        run: date
+
+      - name: Step 3 - List files
+        run: ls -la
+
+      - name: Step 4 - Final message
+        run: echo "Workflow completed successfully!"
