@@ -1,6 +1,7 @@
-name: Real CI Pipeline
+name: basic add
 
-on: push
+on:
+  workflow_dispatch:
 
 jobs:
   test:
