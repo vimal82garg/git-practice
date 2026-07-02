@@ -1,1 +1,4 @@
-print("Hello python mein welcome--12345")
+def add(a, b):
+    return a + b
+
+print(add(10, 20))
