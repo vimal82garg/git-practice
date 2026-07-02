@@ -1,6 +1,7 @@
-name: for test script file
+name: for comapre test
 
-on: push
+on:
+ workflow_dispatch: 
 
 jobs:
   test:
